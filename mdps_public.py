@@ -9,6 +9,14 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # loading the saved models
 
@@ -22,9 +30,17 @@ with st.sidebar:
     selected = option_menu('SMIRTI-D',
                           
                           ['Dementia Disease Prediction'],
-                          icons=['brain'],
+                          icons=[st.image("https://em-content.zobj.net/source/microsoft/379/brain_1f9e0.png",width=10,],
                           default_index=0)
+    st.image(
+    "https://em-content.zobj.net/source/microsoft/379/man-health-worker_1f468-200d-2695-fe0f.png",
+    width=100,
+    )
     
+ st.image(
+    "https://em-content.zobj.net/source/apple/391/brain_1f9e0.png",
+    width=100,
+    )   
     
 # Diabetes Prediction Page
 if (selected == 'Dementia Disease Prediction'):
@@ -81,7 +97,11 @@ if (selected == 'Dementia Disease Prediction'):
 
 
 
+# Define the message
+message = "Created by ❤️ Amaan Arif"
 
+# Display the message in the sidebar
+st.sidebar.markdown(message)
 
 
 

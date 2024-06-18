@@ -30,7 +30,7 @@ with st.sidebar:
     selected = option_menu('SMIRTI-D',
                           
                           ['Dementia Disease Prediction'],
-                          icons=[st.image("https://em-content.zobj.net/source/microsoft/379/brain_1f9e0.png",width=10,],
+                          icons=[st.image("https://em-content.zobj.net/source/microsoft/379/brain_1f9e0.png",width=10,)],
                           default_index=0)
     st.image(
     "https://em-content.zobj.net/source/microsoft/379/man-health-worker_1f468-200d-2695-fe0f.png",

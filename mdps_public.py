@@ -34,8 +34,7 @@ with st.sidebar:
             st.image("https://em-content.zobj.net/source/microsoft/379/man-health-worker_1f468-200d-2695-fe0f.png",
                      width=100,
                     )
-    
- st.image(
+    st.image(
     "https://em-content.zobj.net/source/apple/391/brain_1f9e0.png",
     width=100,
     )   

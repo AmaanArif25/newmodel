@@ -12,7 +12,7 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-dementia = pickle.load(open('"C:\Users\hp\OneDrive\Desktop\dementia_prediction\dementia_model.sav"', 'rb'))
+dementia = pickle.load(open('dementia_model.sav", 'rb'))
 
 
 

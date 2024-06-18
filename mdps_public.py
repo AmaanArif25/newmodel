@@ -21,7 +21,7 @@ with st.sidebar:
     
     selected = option_menu('SMIRTI-D',
                           
-                          ['Dementia Disease Prediction',
+                          ['Dementia Disease Prediction'],
                           icons=['brain'],
                           default_index=0)
     

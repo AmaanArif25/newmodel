@@ -26,16 +26,15 @@ dementia = pickle.load(open('dementia_model.sav','rb'))
 
 # sidebar for navigation
 with st.sidebar:
-    
-    selected = option_menu('SMIRTI-D',
-                          
-                          ['Dementia Disease Prediction'],
-                          icons=[st.image("https://em-content.zobj.net/source/microsoft/379/brain_1f9e0.png",width=10,)],
-                          default_index=0)
-    st.image(
-    "https://em-content.zobj.net/source/microsoft/379/man-health-worker_1f468-200d-2695-fe0f.png",
-    width=100,
-    )
+            brain_image_url = "https://em-content.zobj.net/source/microsoft/379/brain_1f9e0.png"
+            selected = option_menu('SMIRTI-D',
+                                   ['Dementia Disease Prediction'],
+                                   icons=[f'<img src="{brain_image_url}" width="20" height="20">'],
+                                   default_index=0)
+            st.image(
+                        "https://em-content.zobj.net/source/microsoft/379/man-health-worker_1f468-200d-2695-fe0f.png",
+                        width=100,
+            )
     
  st.image(
     "https://em-content.zobj.net/source/apple/391/brain_1f9e0.png",
